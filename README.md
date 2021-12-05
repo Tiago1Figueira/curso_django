@@ -1,2 +1,2 @@
-# curso_django
+# Curso_django
 Esse repositório servirá de modelo para o curso django. 
