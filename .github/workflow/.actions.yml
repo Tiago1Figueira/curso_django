@@ -1,0 +1,29 @@
+name: actions
+on: [push]
+jobs:
+
+  teste:
+
+    runs-on: ubuntu-latest
+
+    steps:
+        - uses: actions/checkout@v2
+        - name: Setup Python
+          uses: actions/setup-python@v1
+          with:
+            python-version: 3.9
+            architecture: x64
+        - name: Instalar dependencias
+          run: |
+            pip install pipenv codecov
+        - name: Pipenv
+          run: |
+            pipenv sync -d
+        - name: Rodar flake8
+          uses: py-actions/flake8@v1
+        - name: Rodar Testes Automaticos
+          run: |
+            pipenv run pytest --cov=curso_django
+        - name: Relatorio Coverage
+          run: |
+            codecov
