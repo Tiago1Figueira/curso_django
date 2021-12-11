@@ -15,7 +15,7 @@ jobs:
             architecture: x64
         - name: Instalar dependencias
           run: |
-#           pip install pipenv codecov
+            pip install pipenv codecov
         - name: Pipenv
           run: |
             pipenv sync -d
