@@ -21,9 +21,10 @@ jobs:
             pipenv sync -d
         - name: Rodar flake8
           uses: py-actions/flake8@v1
-#       - name: Rodar Testes Automaticos
-#         run: |
-#            pipenv run pytest --cov=curso_django
+        - name: Rodar Testes Automaticos
+          run: |
+             pipenv run pytest --cov=curso_django
 #        - name: Relatorio Coverage
 #         run: |
 #            codecov
+# pipenv run pytest --cov=curso_django
