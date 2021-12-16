@@ -13,15 +13,15 @@ jobs:
           with:
             python-version: 3.9
             architecture: x64
-        - name: Instalar dependencias
+        - name: Instalar Pipenv
           run: |
             pip install pipenv codecov
-        - name: Pipenv
+        - name: Instala dependencias
           run: |
             pipenv sync -d
         - name: Rodar flake8
           uses: py-actions/flake8@v1
-        - name: Rodar Testes Automaticos
+        - name: Rodar Testes Automaticos (pytest,cov)
           run: |
              pipenv run pytest --cov=pypro
         - name: Relatorio Coverage
