@@ -23,8 +23,8 @@ jobs:
           uses: py-actions/flake8@v1
         - name: Rodar Testes Automaticos
           run: |
-             pipenv run pytest
-#        - name: Relatorio Coverage
-#         run: |
-#            codecov
-#  pipenv run pytest --cov=curso_django
+             pipenv run pytest --cov=pypro
+        - name: Relatorio Coverage
+          run: |
+             codecov
+
