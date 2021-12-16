@@ -16,7 +16,7 @@ jobs:
         - name: Instalar Pipenv
           run: |
             pip install pipenv codecov
-        - name: Instala dependencias
+        - name: Pipenv instala dependencias
           run: |
             pipenv sync -d
         - name: Rodar flake8
