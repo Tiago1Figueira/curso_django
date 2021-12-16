@@ -16,12 +16,12 @@ jobs:
         - name: Instalar Pipenv
           run: |
             pip install pipenv codecov
-        - name: Pipenv instala dependencias
+        - name: Pipenv instalando dependencias
           run: |
             pipenv sync -d
         - name: Rodar flake8
           uses: py-actions/flake8@v1
-        - name: Rodar Testes Automaticos (pytest,cov)
+        - name: Rodar Testes Automaticos - pytest,cov
           run: |
              pipenv run pytest --cov=pypro
         - name: Relatorio Coverage
