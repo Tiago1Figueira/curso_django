@@ -16,7 +16,7 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 import dj_database_url
 from decouple import config, Csv
-from django.template.defaulttags import url
+# from django.template.defaulttags import url
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
