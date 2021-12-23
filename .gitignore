@@ -127,3 +127,12 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Pycharm
+.idea
+
+# Postgres files for local development
+.pgdata
+
+#Django
+staticfiles/
