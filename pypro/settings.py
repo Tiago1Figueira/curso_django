@@ -77,7 +77,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'pypro.wsgi.application'
 
 
-# Database
+# Database #
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 default_db_url = 'sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3')
