@@ -10,3 +10,6 @@ AWS_STORAGE_BUCKET_NAME=
 
 #configuração django debug toolbar
 INTERNAL_IPS=127.0.0.1
+
+#configuração sentry.
+SENTRY_DSN=
