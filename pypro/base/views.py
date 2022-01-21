@@ -2,7 +2,7 @@ from django.http import HttpResponse
 
 # Create your views here.
 
-# HTML simples somente para abrir o django debug toolbar
+# HTML simples somente para abrir o django debug toolbar.
 
 
 def home(request):
