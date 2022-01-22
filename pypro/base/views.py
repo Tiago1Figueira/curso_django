@@ -1,10 +1,6 @@
 from django.http import HttpResponse
-
-# Create your views here.
-
-# HTML simples somente para abrir o django debug toolbar.
+from django.shortcuts import render
 
 
 def home(request):
-    raise ValueError()
-    return HttpResponse('<html><body>Olá Django!</body></html>', content_type='text/html')
+    return render(request, 'base/home.html')
