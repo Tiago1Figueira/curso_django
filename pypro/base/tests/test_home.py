@@ -19,5 +19,5 @@ def test_title(resp):
     assert_contains(resp, '<title>Python Pro</title>')
 
 
-def test_link(resp):
+def test_home_link(resp):
     assert_contains(resp, f'href="{reverse("base:home")}">Python Pro</a>')
