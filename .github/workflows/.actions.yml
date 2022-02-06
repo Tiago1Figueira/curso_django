@@ -9,7 +9,7 @@ jobs:
     #Configurando o Postgres:
     services:
       postgres:
-        image: postgres:9.5
+        image: postgres:12
         env:
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
