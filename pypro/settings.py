@@ -18,7 +18,7 @@ from sentry_sdk.integrations.django import DjangoIntegration
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 import dj_database_url
 from decouple import config, Csv
-# from django.templates.defaulttags import url
+# from django.template.defaulttags import url
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -64,13 +64,13 @@ ROOT_URLCONF = 'pypro.urls'
 
 TEMPLATES = [
     {
-        'BACKEND': 'django.templates.backends.django.DjangoTemplates',
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
-                'django.templates.context_processors.debug',
-                'django.templates.context_processors.request',
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
