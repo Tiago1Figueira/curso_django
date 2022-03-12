@@ -44,6 +44,6 @@ jobs:
 
         - name: Rodar Relatorio Coverage - codecov
           run: |
-             codecov
+             codecov #
 
 
