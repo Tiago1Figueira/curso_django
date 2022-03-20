@@ -7,7 +7,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1 class="mt-4 mb-3">{{ video.titulo }} </h1>
+            <h1 class="mt-4 mb-3">{{ video.titulo | default:"Faltando Título" }}</h1>
 
             <div style="padding:56.21% 0 0 0;position:relative;">
                 <iframe src="https://player.vimeo.com/video/{{video.vimeo_id}}?h=5f0d8fd14b&amp;badge=0&amp;
