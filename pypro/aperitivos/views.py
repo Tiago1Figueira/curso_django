@@ -2,5 +2,9 @@ from django.shortcuts import render
 
 
 def video(request, slug):
-    video = {'titulo': 'Video Aperitivo: Motivação', 'vimeo_id': 682327604}
+    videos = {
+        'motivacao': {'titulo': 'Video Aperitivo: Motivação', 'vimeo_id': 682327604},
+        'instalacao_windows': {'titulo': 'Instalação Windows', 'vimeo_id': 690291392},
+    }
+    video = videos[slug]
     return render(request, 'aperitivos/video.html', context={'video': video})
