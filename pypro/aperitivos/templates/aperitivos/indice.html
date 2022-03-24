@@ -12,14 +12,13 @@
                 {% for video in videos %}
                 <li>{{ video.titulo | default:"Faltando título!!" }}</li>
                 {% empty %}
-                 <li>Não foi encontrado qualquer vídeo de aperitivo!!</li>
+                <li>Não foi encontrado qualquer vídeo de aperitivo!!</li>
                 {% endfor %}
             </ol>
 
 
-
-            </div>
-            <script src="https://player.vimeo.com/api/player.js"></script>
         </div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
     </div>
-    {% endblock body %}
+</div>
+{% endblock body %}
