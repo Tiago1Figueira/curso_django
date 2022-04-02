@@ -131,8 +131,11 @@ dmypy.json
 # Pycharm
 .idea
 
+#Django
+staticfiles/
+
 # Postgres files for local development
 .pgdata
 
-#Django
-staticfiles/
+
+
