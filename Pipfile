@@ -14,7 +14,10 @@ sentry-sdk = "*"
 pytest = "*"
 pytest-django = "*"
 django-debug-toolbar = "*"
-django = "==3.2.12"
+django = "*"
+4 = "*"
+django-ordered-model = "*"
+model-bakery = "*"
 
 [dev-packages]
 flake8 = "*"
