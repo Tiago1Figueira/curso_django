@@ -13,3 +13,4 @@ def listar_modulos_ordenados() -> List[Modulo]:
 
 def encontrar_modulo(slug: str) -> Modulo:
     return Modulo.objects.get(slug=slug)
+#

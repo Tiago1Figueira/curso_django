@@ -5,4 +5,4 @@ from pypro.modulos import facade
 
 def detalhe(request, slug):
     modulo = facade.encontrar_modulo(slug)
-    render(request, 'modulos/modulo_detalhe.html', {'modulo': modulo})
+    return render(request, 'modulos/modulo_detalhe.html', {'modulo': modulo})
