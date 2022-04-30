@@ -14,6 +14,7 @@ sentry-sdk = "*"
 pytest = "*"
 pytest-django = "*"
 django-debug-toolbar = "*"
+django = "*"
 
 [dev-packages]
 flake8 = "*"
