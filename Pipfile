@@ -14,7 +14,7 @@ sentry-sdk = "*"
 pytest = "*"
 pytest-django = "*"
 django-debug-toolbar = "*"
-django = "==3.2.12"
+django = "*"
 
 [dev-packages]
 flake8 = "*"
@@ -23,6 +23,8 @@ pytest-cov = "*"
 codecov = "*"
 pytest-django = "*"
 django-debug-toolbar = "*"
+django-ordered-model = "*"
+model-mommy = "*"
 
 [requires]
 python_version = "3.9"
