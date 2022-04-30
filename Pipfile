@@ -24,6 +24,7 @@ codecov = "*"
 pytest-django = "*"
 django-debug-toolbar = "*"
 django-ordered-model = "*"
+model-mommy = "*"
 
 [requires]
 python_version = "3.9"
