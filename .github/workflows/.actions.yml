@@ -1,49 +1,54 @@
-name: actions
-on: [pull_request]
-jobs:
+name: CI
 
-  teste:
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     runs-on: ubuntu-latest
 
-    #Configurando o Postgres:
     services:
       postgres:
         image: postgres:12
         env:
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
-          POSTGRES_DB: testedb
+          POSTGRES_DB: postgres
         ports: [ '5432:5432' ]
 
-    #Steps pro building
     steps:
-        - uses: actions/checkout@v2
-
-        - name: Setup Python
-          uses: actions/setup-python@v1
-          with:
-            python-version: 3.9
-            architecture: x64
-
-        - name: Instalar Pipenv
-          run: |
-            pip install pipenv codecov
-
-        - name: Pipenv instalando dependencias
-          run: |
-            pipenv sync -d
-            cp contrib/env-sample .env
-
-        - name: Rodar Testes Automaticos - flake8
-          uses: py-actions/flake8@v1
-
-        - name: Rodar Testes Automaticos - Pytest-cov
-          run: |
-             pipenv run pytest --cov=pypro
-
-        - name: Rodar Relatorio Coverage - codecov
-          run: |
-             codecov #
-
-
+      - uses: actions/checkout@v3
+      - name: Setup Python
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.9
+          architecture: x64
+          cache: 'pip'
+      - name: Copiar Configurações .env
+        run: |
+          cp contrib/env-sample .env
+      - name: Instalar dependências
+        run: |
+          pip install pipenv
+          pipenv sync -d
+          cp contrib/env-sample .env
+      - name: Rodar flake8
+        uses: py-actions/flake8@v1
+        with:
+          checkName: 'flake8_py3'
+      - name: Rodar Testes Automáticos
+        run: |
+          pipenv run pytest --cov=pypro
+      - name: Relatório Coverage
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+        run: |
+          codecov
