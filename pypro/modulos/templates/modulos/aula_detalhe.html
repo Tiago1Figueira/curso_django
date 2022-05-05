@@ -4,6 +4,18 @@
 {% block title %}Python Pro - Aperitivo{% endblock title %}
 {% block description %}Página com video gratuito de python.{% endblock description %}
 {% block body %}
+
+<!-- INICIO DO BREADCRUMB -->
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="{{aula.modulo.get_absolute_url}}">{{aula.modulo.titulo}}</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{{aula.titulo}}</li>
+    </ol>
+</nav>
+<!-- FIM DO BREADCRUMB -->
+
 <div class="container">
     <div class="row">
         <div class="col-md-12">
