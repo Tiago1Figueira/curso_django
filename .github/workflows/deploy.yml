@@ -42,7 +42,7 @@ jobs:
           checkName: 'flake8_py3'
       - name: Rodar Testes Automáticos
         run: |
-          pytest
+          pipenv run pytest --cov=pypro
 
   deploy:
     env:
