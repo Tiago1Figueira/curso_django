@@ -34,7 +34,8 @@ jobs:
           cp contrib/env-sample .env
       - name: Instalar dependências
         run: |
-          pip install -r requirements-dev.txt
+          pip install pipenv
+          pipenv sync -d
       - name: Rodar flake8
         uses: py-actions/flake8@v1
         with:
