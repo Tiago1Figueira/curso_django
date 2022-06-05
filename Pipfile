@@ -24,8 +24,8 @@ pytest = "*"
 pytest-cov = "*"
 codecov = "*"
 pytest-django = "*"
-django-ordered-model = "*"
 model-mommy = "*"
+django-ordered-model = "*"
 
 [requires]
 python_version = "3.9"
