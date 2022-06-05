@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "0b97379564082370c5ad1dbbbf868be814acbf0370e1f73e24877465560096fb"
+            "sha256": "d05366a061ec1ed31921b9c00286efc131ad494fe5ef4b9e167a26e41d7c2782"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -124,14 +124,6 @@
             "index": "pypi",
             "version": "==4.0.5"
         },
-        "django-debug-toolbar": {
-            "hashes": [
-                "sha256:42c1c2e9dc05bb57b53d641e3a6d131fc031b92377b34ae32e604a1fe439bb83",
-                "sha256:ae6bec2c1ce0e6900b0ab0443e1427eb233d8e6f57a84a0b2705eeecb8874e22"
-            ],
-            "index": "pypi",
-            "version": "==3.4.0"
-        },
         "django-extensions": {
             "hashes": [
                 "sha256:28e1e1bf49f0e00307ba574d645b0af3564c981a6dfc87209d48cb98f77d0b1a",
@@ -139,6 +131,14 @@
             ],
             "index": "pypi",
             "version": "==3.1.5"
+        },
+        "django-ordered-model": {
+            "hashes": [
+                "sha256:0006b111f472a2348f75554a4e77bee2b1f379a0f96726af6b1a3ebf3a950789",
+                "sha256:62161a6bc51d8b402644854b257605d7b5183d01fd349826682a87e9227c05b5"
+            ],
+            "index": "pypi",
+            "version": "==3.6"
         },
         "django-s3-folder-storage": {
             "hashes": [
@@ -595,13 +595,13 @@
             "index": "pypi",
             "version": "==4.0.5"
         },
-        "django-ordered-model": {
+        "django-debug-toolbar": {
             "hashes": [
-                "sha256:0006b111f472a2348f75554a4e77bee2b1f379a0f96726af6b1a3ebf3a950789",
-                "sha256:62161a6bc51d8b402644854b257605d7b5183d01fd349826682a87e9227c05b5"
+                "sha256:42c1c2e9dc05bb57b53d641e3a6d131fc031b92377b34ae32e604a1fe439bb83",
+                "sha256:ae6bec2c1ce0e6900b0ab0443e1427eb233d8e6f57a84a0b2705eeecb8874e22"
             ],
             "index": "pypi",
-            "version": "==3.6"
+            "version": "==3.4.0"
         },
         "flake8": {
             "hashes": [
