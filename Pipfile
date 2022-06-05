@@ -16,7 +16,7 @@ pytest-django = "*"
 django = "*"
 ipython = "*"
 django-extensions = "*"
-django-debug-toolbar = "*"
+django-ordered-model = "*"
 
 [dev-packages]
 flake8 = "*"
@@ -25,7 +25,7 @@ pytest-cov = "*"
 codecov = "*"
 pytest-django = "*"
 model-mommy = "*"
-django-ordered-model = "*"
+django-debug-toolbar = "*"
 
 [requires]
 python_version = "3.9"
