@@ -133,12 +133,8 @@
             "version": "==3.1.5"
         },
         "django-ordered-model": {
-            "hashes": [
-                "sha256:0006b111f472a2348f75554a4e77bee2b1f379a0f96726af6b1a3ebf3a950789",
-                "sha256:62161a6bc51d8b402644854b257605d7b5183d01fd349826682a87e9227c05b5"
-            ],
-            "index": "pypi",
-            "version": "==3.6"
+            "hashes": [],
+            "version": "==3.7.4"
         },
         "django-s3-folder-storage": {
             "hashes": [
