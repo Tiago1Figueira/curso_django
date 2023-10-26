@@ -25,11 +25,8 @@
             "version": "==3.5.2"
         },
         "asttokens": {
-            "hashes": [
-                "sha256:0844691e88552595a6f4a4281a9f7f79b8dd45ca4ccea82e5e05b4bbdb76705c",
-                "sha256:9a54c114f02c7a9480d56550932546a3f1fe71d8a02f1bc7ccd0ee3ee35cf4d5"
-            ],
-            "version": "==2.0.5"
+            "hashes": [],
+            "version": "==2.4.1"
         },
         "attrs": {
             "hashes": [
